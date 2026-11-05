@@ -30,8 +30,11 @@ public sealed class ValidatorApp(
             logger.LogWarning("Validation of {Path} was canceled", path);
             return 130;
         }
-        // TODO (Checkpoint 2): a file that can't be opened or read must fail the run.
-        // Decide which exceptions mean "the file is unusable", catch them here,
-        // log them, and return a non-zero exit code instead of printing a report.
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)
+        {
+            logger.LogError(ex, "Could not read {Path}", path);
+            await Console.Error.WriteLineAsync($"Error: could not read '{path}': {ex.Message}");
+            return 1;
+        }
     }
 }
