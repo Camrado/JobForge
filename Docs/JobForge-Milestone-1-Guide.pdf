@@ -1,0 +1,568 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 8 /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 6194 >>
+stream
+1 1 1 rg 0 0 596 842 re f
+0.07 0.19 0.25 rg 0 731 596 112 re f
+0.04 0.38 0.37 rg 0 731 8 112 re f
+1 1 1 rg BT /F2 10 Tf 1 0 0 1 44 807 Tm (JOBFORGE  /  MILESTONE 1) Tj ET
+1 1 1 rg BT /F2 29 Tf 1 0 0 1 44 765 Tm (Build walkthrough) Tj ET
+0.04 0.38 0.37 rg BT /F2 8 Tf 1 0 0 1 44 27 Tm (PROCESS LOCALLY WITH BOUNDED CONCURRENCY) Tj ET
+0.04 0.38 0.37 rg BT /F2 9 Tf 1 0 0 1 538 27 Tm (1) Tj ET
+0.91 0.96 0.96 rg 44 688 131 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 699 Tm (Part) Tj ET
+0.91 0.96 0.96 rg 177 688 185 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 699 Tm (What you build) Tj ET
+0.91 0.96 0.96 rg 364 688 185 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 699 Tm (What proves it works) Tj ET
+0.91 0.96 0.96 rg 44 649 131 35 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 673 Tm (1A. Sequential console) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 660 Tm (validator) Tj ET
+0.91 0.96 0.96 rg 177 649 185 35 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 673 Tm (Read and validate an NDJSON file one) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 660 Tm (line at a time.) Tj ET
+0.91 0.96 0.96 rg 364 649 185 35 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 673 Tm (The five-line fixture produces the) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 660 Tm (exact expected report.) Tj ET
+0.91 0.96 0.96 rg 44 584 131 61 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 634 Tm (1B. Concurrent console) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 621 Tm (validator) Tj ET
+0.91 0.96 0.96 rg 177 584 185 61 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 634 Tm (Use one file reader, a bounded) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 621 Tm (record channel, and four consumers.) Tj ET
+0.91 0.96 0.96 rg 364 584 185 61 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 634 Tm (The report matches the baseline, a) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 621 Tm (full channel slows the reader, and) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 608 Tm (cancellation or failure shuts down) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 595 Tm (the pipeline.) Tj ET
+0.91 0.96 0.96 rg 44 532 131 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 569 Tm (1C. In-memory job API) Tj ET
+0.91 0.96 0.96 rg 177 532 185 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 569 Tm (Add endpoints, job tracking, and a) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 556 Tm (separate bounded queue for whole) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 543 Tm (jobs.) Tj ET
+0.91 0.96 0.96 rg 364 532 185 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 569 Tm (You can submit, inspect, cancel, and) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 556 Tm (retrieve reports. A full job queue) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 543 Tm (returns 503.) Tj ET
+0.04 0.38 0.37 rg BT /F2 16 Tf 1 0 0 1 44 523 Tm (1A. Build the sequential console validator) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 495 Tm (The console app takes a path to an NDJSON file. It reads a line, validates it, updates the report,) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 481 Tm (and then reads the next line. Keep validation of a single line separate from reading and) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 467 Tm (aggregating the file so you can reuse the same rules in 1B.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 445 Tm (ï Count each line once toward Total. A line is either valid or invalid.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 423 Tm (ï Count each applicable error category. A line with a blank ID and unsupported currency) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 409 Tm (contributes one invalid record and two error counts.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 387 Tm (ï Keep the first 20 invalid lines by line number as samples. Each sample contains the line number) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 373 Tm (and all its errors. Keep counting every error after the sample list fills up.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 351 Tm (ï Treat malformed JSON as a finding for that line and continue. If the file itself canít be opened) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 337 Tm (or read, the run fails.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 315 Tm (Pass when the five-line fixture returns 5 total, 2 valid, 3 invalid, with one occurrence of each) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 301 Tm (category. Also run an empty file and a file with more than 20 invalid lines to check the report) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 287 Tm (boundaries.) Tj ET
+0.04 0.38 0.37 rg BT /F2 16 Tf 1 0 0 1 44 265 Tm (1B. Add bounded concurrency inside one validation job) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 237 Tm (Use one producer to read the file. It sends each line and its original line number into a bounded) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 223 Tm (record channel with capacity 32. Start four consumers. Each takes one record, validates it using) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 209 Tm (the rules from 1A, updates its own counters, and then takes another.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 187 Tm (The producer awaits each write before reading the next line. When the channel fills up, the next) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 173 Tm (write waits. A slot opens as soon as a consumer takes a record, even if itís still validating that) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 159 Tm (record. The 32 slots limit waiting records. The four consumers limit active validations.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 137 Tm (After a successful run, combine the consumersí counters. To preserve the baselineís sample policy,) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 123 Tm (have each consumer retain its own 20 lowest-numbered invalid lines. At the end, merge those small) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 109 Tm (lists and select the 20 lowest line numbers overall. This keeps the report stable even when line) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 95 Tm (50 finishes before line 12.) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 5260 >>
+stream
+1 1 1 rg 0 0 596 842 re f
+0.07 0.19 0.25 rg 0 731 596 112 re f
+0.04 0.38 0.37 rg 0 731 8 112 re f
+1 1 1 rg BT /F2 10 Tf 1 0 0 1 44 807 Tm (JOBFORGE  /  MILESTONE 1) Tj ET
+1 1 1 rg BT /F2 29 Tf 1 0 0 1 44 765 Tm (Build walkthrough ∑ continued) Tj ET
+0.04 0.38 0.37 rg BT /F2 8 Tf 1 0 0 1 44 27 Tm (PROCESS LOCALLY WITH BOUNDED CONCURRENCY) Tj ET
+0.04 0.38 0.37 rg BT /F2 9 Tf 1 0 0 1 538 27 Tm (2) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 705 Tm (Make the pipeline shut down correctly) Tj ET
+0.91 0.96 0.96 rg 44 663 168 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 674 Tm (Event) Tj ET
+0.91 0.96 0.96 rg 214 663 335 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 674 Tm (Expected behavior) Tj ET
+0.91 0.96 0.96 rg 44 611 168 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 648 Tm (Normal end of file) Tj ET
+0.91 0.96 0.96 rg 214 611 335 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 648 Tm (The producer signals that no more records are coming. Consumers) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 635 Tm (finish the records already queued, then exit. The caller combines) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 622 Tm (their results.) Tj ET
+0.91 0.96 0.96 rg 44 559 168 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 596 Tm (Cancellation) Tj ET
+0.91 0.96 0.96 rg 214 559 335 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 596 Tm (The stop signal reaches the producer and all consumers. A) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 583 Tm (producer waiting for channel space can exit. The caller waits for) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 570 Tm (all tasks to finish and treats the run as canceled.) Tj ET
+0.91 0.96 0.96 rg 44 520 168 35 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 544 Tm (Unexpected producer or consumer) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 531 Tm (failure) Tj ET
+0.91 0.96 0.96 rg 214 520 335 35 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 544 Tm (The failure signals the other tasks to stop. The caller waits for) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 531 Tm (them to exit and surfaces the original failure.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 511 Tm (The important trap: waiting for all tasks to finish doesnít itself tell them to stop. If a) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 497 Tm (consumer fails and the producer is blocked on a full channel, the failure must trigger a stop) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 483 Tm (signal while the tasks are still running. Decide who sends that signal before writing the) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 469 Tm (orchestration.) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 447 Tm (Prove it with four checks) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 422 Tm (1. Same result. Run both validators on the same fixtures. Compare totals, category counts, and) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 408 Tm (sampled line numbers.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 386 Tm (2. Backpressure. Slow down validation deliberately and observe the producer waiting on a write.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 372 Tm (Track how many validations are active and verify the peak is at most four. The delay is there to) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 358 Tm (expose the behavior.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 336 Tm (3. Cancellation while blocked. Hold the consumers at a point you control, let the buffer fill, and) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 322 Tm (confirm that the producerís next write is pending. Then cancel and verify all tasks exit.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 300 Tm (4. Failure while blocked. Recreate the same setup, but make a consumer throw after the write is) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 286 Tm (pending. Verify the caller sees that failure and the producer and remaining consumers exit. A test) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 272 Tm (timeout can catch a hang. Use the controlled pause to arrange the scenario.) Tj ET
+0.04 0.38 0.37 rg BT /F2 16 Tf 1 0 0 1 44 250 Tm (1C. Put the validator behind an in-memory job API) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 222 Tm (Now add a second queue. The queue in 1B holds records from one file. This new queue holds whole) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 208 Tm (jobs waiting to start. Use one hosted background worker that processes one job at a time. For an) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 194 Tm (easy manual test, give the job queue two waiting slots. Each active job still uses the record) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 180 Tm (channel and four consumers from 1B.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 158 Tm (Keep an in-memory registry keyed by job ID. It holds the dataset reference, current status, and) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 144 Tm (any completed report. Use a dataset ID that maps to a pre-staged file.) Tj ET
+0.91 0.96 0.96 rg 44 105 168 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 116 Tm (Endpoint) Tj ET
+0.91 0.96 0.96 rg 214 105 335 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 116 Tm (Behavior) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 4014 >>
+stream
+1 1 1 rg 0 0 596 842 re f
+0.07 0.19 0.25 rg 0 731 596 112 re f
+0.04 0.38 0.37 rg 0 731 8 112 re f
+1 1 1 rg BT /F2 10 Tf 1 0 0 1 44 807 Tm (JOBFORGE  /  MILESTONE 1) Tj ET
+1 1 1 rg BT /F2 29 Tf 1 0 0 1 44 765 Tm (Build walkthrough ∑ continued) Tj ET
+0.04 0.38 0.37 rg BT /F2 8 Tf 1 0 0 1 44 27 Tm (PROCESS LOCALLY WITH BOUNDED CONCURRENCY) Tj ET
+0.04 0.38 0.37 rg BT /F2 9 Tf 1 0 0 1 538 27 Tm (3) Tj ET
+0.91 0.96 0.96 rg 44 662 168 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 699 Tm (POST /jobs) Tj ET
+0.91 0.96 0.96 rg 214 662 335 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 699 Tm (Accept a dataset ID. If thereís room, register and enqueue the) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 686 Tm (job, then return 202 Accepted with its ID. If the queue is full,) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 673 Tm (return 503 promptly.) Tj ET
+0.91 0.96 0.96 rg 44 636 168 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 647 Tm (GET /jobs/{id}) Tj ET
+0.91 0.96 0.96 rg 214 636 335 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 647 Tm (Return Queued, Running, Succeeded, Failed, or Canceled.) Tj ET
+0.91 0.96 0.96 rg 44 597 168 35 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 621 Tm (GET /jobs/{id}/report) Tj ET
+0.91 0.96 0.96 rg 214 597 335 35 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 621 Tm (Return the completed report for a succeeded job. Return 409 for a) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 608 Tm (known job without a successful report and 404 for an unknown ID.) Tj ET
+0.91 0.96 0.96 rg 44 545 168 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 582 Tm (POST /jobs/{id}/cancel) Tj ET
+0.91 0.96 0.96 rg 214 545 335 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 582 Tm (Cancel a queued job so the worker skips it. For a running job,) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 569 Tm (signal the pipeline to stop. Repeated requests are safe, and a) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 556 Tm (terminal state stays terminal.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 536 Tm (There are two races worth thinking through. Submission and pickup can overlap, so a worker that) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 522 Tm (dequeues a job must be able to find its registry entry. A rejected submission should leave no job) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 508 Tm (behind that looks accepted. Cancellation and completion can also overlap, so make the final) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 494 Tm (transition atomic. If success wins, the status and report should become visible together. If) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 480 Tm (cancellation wins, the worker shouldnít later publish a success report.) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 458 Tm (Run the final milestone demo) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 433 Tm (1. Submit job A and hold it in Running. Submit jobs B and C. They should be Queued. Submit job D.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 419 Tm (It should receive 503.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 397 Tm (2. Cancel one queued job and verify the worker skips it. Let another accepted job finish and) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 383 Tm (retrieve its report using the original job ID.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 361 Tm (3. Cancel a running job and verify its pipeline exits and its state becomes Canceled.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 339 Tm (4. Make one job fail unexpectedly. Verify it becomes Failed and the hosted worker can still pick) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 325 Tm (up the next job.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 303 Tm (Thatís the full scope of Milestone 1. Its job state lives in memory for the lifetime of the) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 289 Tm (application. Milestone 2 starts when you add PostgreSQL to make accepted jobs survive a restart.) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 5159 >>
+stream
+1 1 1 rg 0 0 596 842 re f
+0.07 0.19 0.25 rg 0 731 596 112 re f
+0.04 0.38 0.37 rg 0 731 8 112 re f
+1 1 1 rg BT /F2 10 Tf 1 0 0 1 44 807 Tm (JOBFORGE  /  MILESTONE 1) Tj ET
+1 1 1 rg BT /F2 29 Tf 1 0 0 1 44 765 Tm (Checkpoints 01ñ02) Tj ET
+0.04 0.38 0.37 rg BT /F2 8 Tf 1 0 0 1 44 27 Tm (PROCESS LOCALLY WITH BOUNDED CONCURRENCY) Tj ET
+0.04 0.38 0.37 rg BT /F2 9 Tf 1 0 0 1 538 27 Tm (4) Tj ET
+0.04 0.38 0.37 rg BT /F2 16 Tf 1 0 0 1 44 705 Tm (1A. Sequential console validator) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 677 Tm (Checkpoint 1 ó Match the five-line report by hand) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 652 Tm (Set up. Use the five-line orders.ndjson fixture. Its expected result is independent of your) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 638 Tm (implementation.) Tj ET
+0.91 0.96 0.96 rg 44 599 168 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 610 Tm (Line) Tj ET
+0.91 0.96 0.96 rg 214 599 335 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 610 Tm (Expected result) Tj ET
+0.91 0.96 0.96 rg 44 573 168 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 584 Tm (1) Tj ET
+0.91 0.96 0.96 rg 214 573 335 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 584 Tm (Valid) Tj ET
+0.91 0.96 0.96 rg 44 547 168 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 558 Tm (2) Tj ET
+0.91 0.96 0.96 rg 214 547 335 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 558 Tm (InvalidAmount) Tj ET
+0.91 0.96 0.96 rg 44 521 168 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 532 Tm (3) Tj ET
+0.91 0.96 0.96 rg 214 521 335 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 532 Tm (InvalidId and UnsupportedCurrency) Tj ET
+0.91 0.96 0.96 rg 44 495 168 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 506 Tm (4) Tj ET
+0.91 0.96 0.96 rg 214 495 335 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 506 Tm (MalformedJson) Tj ET
+0.91 0.96 0.96 rg 44 469 168 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 480 Tm (5) Tj ET
+0.91 0.96 0.96 rg 214 469 335 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 480 Tm (Valid) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 460 Tm (Run. Pass the file path to your console app and compare the report against the table.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 438 Tm (Pass when. The report shows 5 total, 2 valid, 3 invalid, one occurrence of each error category,) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 424 Tm (and samples for lines 2, 3, and 4 in that order. Line 3 has both errors in the same sample. Line 5) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 410 Tm (contributes to the valid count, which proves the validator continued after malformed JSON.) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 388 Tm (Checkpoint 2 ó Verify the boundaries) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 363 Tm (Run these separately so a failure tells you which behavior to inspect.) Tj ET
+0.91 0.96 0.96 rg 44 324 168 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 335 Tm (Input) Tj ET
+0.91 0.96 0.96 rg 214 324 335 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 335 Tm (Expected result) Tj ET
+0.91 0.96 0.96 rg 44 298 168 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 309 Tm (Empty file) Tj ET
+0.91 0.96 0.96 rg 214 298 335 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 309 Tm (Zero records, zero errors, and no samples.) Tj ET
+0.91 0.96 0.96 rg 44 246 168 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 283 Tm (25 invalid lines, each with a) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 270 Tm (negative amount and otherwise) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 257 Tm (valid fields) Tj ET
+0.91 0.96 0.96 rg 214 246 335 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 283 Tm (25 total, 25 invalid, 25 InvalidAmount findings, and samples for) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 270 Tm (lines 1ñ20 only.) Tj ET
+0.91 0.96 0.96 rg 44 207 168 35 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 231 Tm (File path that doesnít exist) Tj ET
+0.91 0.96 0.96 rg 214 207 335 35 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 231 Tm (The run fails with a file error. The app surfaces the failure) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 218 Tm (instead of printing a successful validation report.) Tj ET
+0.91 0.96 0.96 rg 44 155 168 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 192 Tm (Large generated file) Tj ET
+0.91 0.96 0.96 rg 214 155 335 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 192 Tm (The reader processes the file incrementally. The validator should) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 179 Tm (keep aggregate counters and capped samples rather than) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 219 166 Tm (accumulating every parsed record or error.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 146 Tm (Before moving on. Make sure you can reuse the rules for validating one line independently of the) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 132 Tm (code that reads and aggregates the whole file. Keep the sequential implementation so you can) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 118 Tm (compare it against the concurrent one.) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 5077 >>
+stream
+1 1 1 rg 0 0 596 842 re f
+0.07 0.19 0.25 rg 0 731 596 112 re f
+0.04 0.38 0.37 rg 0 731 8 112 re f
+1 1 1 rg BT /F2 10 Tf 1 0 0 1 44 807 Tm (JOBFORGE  /  MILESTONE 1) Tj ET
+1 1 1 rg BT /F2 29 Tf 1 0 0 1 44 765 Tm (Checkpoints 03ñ06) Tj ET
+0.04 0.38 0.37 rg BT /F2 8 Tf 1 0 0 1 44 27 Tm (PROCESS LOCALLY WITH BOUNDED CONCURRENCY) Tj ET
+0.04 0.38 0.37 rg BT /F2 9 Tf 1 0 0 1 538 27 Tm (5) Tj ET
+0.04 0.38 0.37 rg BT /F2 16 Tf 1 0 0 1 44 705 Tm (1B. Concurrent console validator) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 677 Tm (Checkpoint 3 ó Get the same report with four consumers) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 652 Tm (Set up. Use one file reader, a record channel with 32 waiting slots, and four consumers. Give each) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 638 Tm (record its original line number before enqueueing it. Each consumer validates one record at a time) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 624 Tm (and keeps its own counts and samples.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 602 Tm (Run. Compare the concurrent report against the sequential report for the five-line fixture and a) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 588 Tm (larger seeded fixture with more than 20 invalid lines. For the larger fixture, introduce different) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 574 Tm (validation delays across records in a test so completion order can differ from file order.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 552 Tm (Pass when. Both implementations agree on totals, category counts, and the same first 20 invalid) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 538 Tm (line numbers, including the errors on each sampled line. Compare the report data rather than) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 524 Tm (console whitespace or execution time.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 502 Tm (Hint for samples. Each consumer keeps its 20 lowest-numbered invalid lines. Merge those candidates) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 488 Tm (and take the 20 lowest overall. If a consumer discards an invalid line, it already has 20 earlier) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 474 Tm (invalid lines of its own, so the discarded line could never belong in the global first 20.) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 452 Tm (Checkpoint 4 ó Observe backpressure and the concurrency limit) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 427 Tm (Set up. Use at least 100 records. Give consumers a test-only pause after they take a record. Track) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 413 Tm (how many validations are active and whether a producer write has to wait.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 391 Tm (Run. Let all four consumers take a record and pause them. Allow the producer to fill all 32) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 377 Tm (waiting slots. Its next write should remain pending. Release one consumer and let it finish its) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 363 Tm (current record and take another.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 341 Tm (Pass when. Peak active validations is at most four. The pending write completes after the consumer) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 327 Tm (takes another record and frees a channel slot. Let the run finish and confirm the report includes) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 313 Tm (every record. This proves the producer waited for capacity and resumed without dropping data.) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 291 Tm (Checkpoint 5 ó Cancel while the producer is waiting) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 266 Tm (Set up. Recreate the full-channel situation. Make the consumersí test pause respond to) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 252 Tm (cancellation too. Wait for a signal that the producerís write is pending before triggering) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 238 Tm (cancellation.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 216 Tm (Run. Cancel the validation run while the write is still pending.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 194 Tm (Pass when. The pending write exits, all four consumers exit, and the caller observes cancellation.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 180 Tm (The caller does not receive a successful partial report. Use a timeout to catch a hang. The) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 166 Tm (pending-write signal is what tells you when to cancel.) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 144 Tm (Checkpoint 6 ó Fail a consumer while the producer is waiting) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 119 Tm (Set up. Use the same full-channel setup. Arrange for one consumer to throw a deliberate exception) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 105 Tm (when you release its test gate. Keep the other consumers paused at waits that respond to the stop) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 91 Tm (signal.) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Length 1364 >>
+stream
+1 1 1 rg 0 0 596 842 re f
+0.07 0.19 0.25 rg 0 731 596 112 re f
+0.04 0.38 0.37 rg 0 731 8 112 re f
+1 1 1 rg BT /F2 10 Tf 1 0 0 1 44 807 Tm (JOBFORGE  /  MILESTONE 1) Tj ET
+1 1 1 rg BT /F2 29 Tf 1 0 0 1 44 765 Tm (Checkpoints 03ñ06 ∑ continued) Tj ET
+0.04 0.38 0.37 rg BT /F2 8 Tf 1 0 0 1 44 27 Tm (PROCESS LOCALLY WITH BOUNDED CONCURRENCY) Tj ET
+0.04 0.38 0.37 rg BT /F2 9 Tf 1 0 0 1 538 27 Tm (6) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 705 Tm (Run. Wait for the producerís write to be pending, then trigger the exception in that one consumer.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 683 Tm (Pass when. The producer and the other consumers exit, and the caller sees the injected exception) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 669 Tm (as the cause of failure. A sibling task may exit through cancellation during cleanup, but the) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 655 Tm (runís outcome is failed.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 633 Tm (Prediction to write first. Who notices the consumerís failure and signals the producer to stop? If) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 619 Tm (your only plan is to handle the exception after waiting for every task to finish, trace what) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 605 Tm (happens to the producer thatís still waiting for space.) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 15 0 R >>
+endobj
+17 0 obj
+<< /Length 5942 >>
+stream
+1 1 1 rg 0 0 596 842 re f
+0.07 0.19 0.25 rg 0 731 596 112 re f
+0.04 0.38 0.37 rg 0 731 8 112 re f
+1 1 1 rg BT /F2 10 Tf 1 0 0 1 44 807 Tm (JOBFORGE  /  MILESTONE 1) Tj ET
+1 1 1 rg BT /F2 29 Tf 1 0 0 1 44 765 Tm (Checkpoints 07ñ10) Tj ET
+0.04 0.38 0.37 rg BT /F2 8 Tf 1 0 0 1 44 27 Tm (PROCESS LOCALLY WITH BOUNDED CONCURRENCY) Tj ET
+0.04 0.38 0.37 rg BT /F2 9 Tf 1 0 0 1 538 27 Tm (7) Tj ET
+0.04 0.38 0.37 rg BT /F2 16 Tf 1 0 0 1 44 705 Tm (1C. In-memory job API) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 677 Tm (Use one active job and two waiting job slots for these checks. Those are limits on whole files.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 663 Tm (The active job still has its own record channel and four consumers. Give yourself a test gate that) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 649 Tm (can hold a job in Running until you release it.) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 627 Tm (Checkpoint 7 ó Submit a job and get its report later) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 602 Tm (Run. Submit a known dataset. Hold the worker after it claims the job and use the returned job ID) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 588 Tm (to query status and request the report. Then release the worker and query both again.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 566 Tm (Pass when. Submission returns 202 with a job ID while validation is still running. During the) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 552 Tm (pause, status is Running and the report endpoint returns 409. After release, status is Succeeded) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 538 Tm (and the report matches the console baseline. If a client sees Succeeded, it can retrieve the) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 524 Tm (report. An unknown ID returns 404.) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 502 Tm (Checkpoint 8 ó Fill the job queue and reject excess work) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 477 Tm (Run. Hold job A in Running. Submit B and C to fill the two waiting slots. Submit D while A is) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 463 Tm (still paused.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 441 Tm (Pass when. A, B, and C all received 202 and remain queryable. B and C are Queued. D receives 503) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 427 Tm (promptly and leaves no accepted job in the registry. Release A and check that the worker processes) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 413 Tm (the queued jobs. This checks API admission. The record-level test in checkpoint 4 checked) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 399 Tm (backpressure inside a job.) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 377 Tm (Checkpoint 9 ó Cancel queued and running work) Tj ET
+0.91 0.96 0.96 rg 44 335 131 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 346 Tm (Scenario) Tj ET
+0.91 0.96 0.96 rg 177 335 185 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 346 Tm (How to arrange it) Tj ET
+0.91 0.96 0.96 rg 364 335 185 22 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 346 Tm (Pass when) Tj ET
+0.91 0.96 0.96 rg 44 270 131 61 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 320 Tm (Queued cancellation) Tj ET
+0.91 0.96 0.96 rg 177 270 185 61 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 320 Tm (Hold A in Running, submit B, then) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 307 Tm (cancel B before releasing A.) Tj ET
+0.91 0.96 0.96 rg 364 270 185 61 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 320 Tm (B becomes Canceled. The worker skips) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 307 Tm (validation and produces no report. B) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 294 Tm (can still occupy a queue slot until) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 281 Tm (dequeued.) Tj ET
+0.91 0.96 0.96 rg 44 218 131 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 255 Tm (Running cancellation) Tj ET
+0.91 0.96 0.96 rg 177 218 185 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 255 Tm (Hold A inside validation at a) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 242 Tm (cancellable wait, then request) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 229 Tm (cancellation.) Tj ET
+0.91 0.96 0.96 rg 364 218 185 48 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 255 Tm (The pipeline exits, A becomes) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 242 Tm (Canceled, no success report appears,) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 229 Tm (and the worker can run another job.) Tj ET
+0.91 0.96 0.96 rg 44 140 131 74 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 203 Tm (Cancellation races) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 49 190 Tm (completion) Tj ET
+0.91 0.96 0.96 rg 177 140 185 74 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 203 Tm (Pause A before publishing success.) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 190 Tm (In one run, let cancellation win. In) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 177 Tm (another, let success commit before) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 182 164 Tm (sending cancellation.) Tj ET
+0.91 0.96 0.96 rg 364 140 185 74 re f
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 203 Tm (A ends Canceled with no report in) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 190 Tm (the first run. A stays Succeeded) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 177 Tm (with its original report in the) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 164 Tm (second. Repeating cancellation) Tj ET
+0.13 0.20 0.25 rg BT /F1 9.5 Tf 1 0 0 1 369 151 Tm (preserves the terminal outcome.) Tj ET
+0.04 0.38 0.37 rg BT /F2 13 Tf 1 0 0 1 44 131 Tm (Checkpoint 10 ó Fail one job and keep the worker alive) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 106 Tm (Run. Submit A and B. Inject an unexpected validation failure into A. Use a normal dataset for B.) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 17 0 R >>
+endobj
+19 0 obj
+<< /Length 1175 >>
+stream
+1 1 1 rg 0 0 596 842 re f
+0.07 0.19 0.25 rg 0 731 596 112 re f
+0.04 0.38 0.37 rg 0 731 8 112 re f
+1 1 1 rg BT /F2 10 Tf 1 0 0 1 44 807 Tm (JOBFORGE  /  MILESTONE 1) Tj ET
+1 1 1 rg BT /F2 29 Tf 1 0 0 1 44 765 Tm (Checkpoints 07ñ10 ∑ continued) Tj ET
+0.04 0.38 0.37 rg BT /F2 8 Tf 1 0 0 1 44 27 Tm (PROCESS LOCALLY WITH BOUNDED CONCURRENCY) Tj ET
+0.04 0.38 0.37 rg BT /F2 9 Tf 1 0 0 1 538 27 Tm (8) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 705 Tm (Pass when. A becomes Failed and has no successful report. B still runs and becomes Succeeded. This) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 691 Tm (verifies that one jobís pipeline can fail without taking down the hosted worker that handles the) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 677 Tm (queue.) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 655 Tm (Milestone 1 is done when all ten checks pass. If youíre still on the five-line fixture, your next) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 641 Tm (two checks are the exact baseline report and the 20-sample cap. Once those pass, checkpoint 3 is) Tj ET
+0.13 0.20 0.25 rg BT /F1 10 Tf 1 0 0 1 44 627 Tm (where you introduce the channel.) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 19 0 R >>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000163 00000 n 
+0000000260 00000 n 
+0000000362 00000 n 
+0000006608 00000 n 
+0000006750 00000 n 
+0000012062 00000 n 
+0000012204 00000 n 
+0000016270 00000 n 
+0000016413 00000 n 
+0000021625 00000 n 
+0000021769 00000 n 
+0000026899 00000 n 
+0000027043 00000 n 
+0000028460 00000 n 
+0000028604 00000 n 
+0000034599 00000 n 
+0000034743 00000 n 
+0000035971 00000 n 
+trailer
+<< /Size 21 /Root 1 0 R >>
+startxref
+36115
+%%EOF
+1 1 obj
+<< /Type /Catalog /Pages 2 0 R  /AF [22 0 R] /Names << /EmbeddedFiles << /Names [(Content Credentials) 22 0 R] >> >> >>
+endobj
+21 0 obj
+<< /Length 24288 /Type /EmbeddedFile /Subtype /application#2Fc2pa >>
+stream
+  ^‡jumb   jumdc2pa  Ä  ™ 8õqc2pa   ^∫jumb   Gjumdc2ma  Ä  ™ 8õqurn:c2pa:00801920-6530-4973-a2c9-4842095d87a4   ™jumb   )jumdc2as  Ä  ™ 8õqc2pa.assertions   	πjumb   #jumd@À2ªäHùß*÷ÙCic2pa.icon    bfdb image/svg+xml   	wbidb<svg width="716" height="716" viewBox="0 0 716 716" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M508.749 317.399C516.777 287.314 508.991 253.884 485.389 230.282C461.788 206.681 428.36 198.895 398.273 206.923C376.231 184.928 343.39 174.956 311.148 183.596C278.906 192.234 255.45 217.292 247.36 247.361C217.291 255.451 192.233 278.91 183.595 311.149C174.957 343.391 184.927 376.232 206.924 398.274C198.896 428.359 206.683 461.789 230.284 485.391C253.885 508.992 287.313 516.779 317.401 508.75C339.442 530.745 372.286 540.717 404.525 532.079C436.767 523.441 460.223 498.384 468.313 468.315C498.383 460.224 523.44 436.766 532.078 404.526C540.716 372.285 530.747 339.443 508.749 317.402V317.399ZM470.899 244.776C486.892 260.77 493.488 282.601 490.687 303.412L415.577 260.046C412.411 258.218 408.509 258.218 405.345 260.046L317.401 310.82V277.526C317.401 275.191 318.652 273.005 320.676 271.837L387.644 233.174C414.178 218.353 448.346 222.223 470.901 244.776H470.899ZM357.837 311.144L398.275 334.491V381.185L357.837 404.532L317.398 381.185V334.491L357.837 311.144ZM264.776 269.693C265.207 239.305 285.644 211.649 316.453 203.393C338.3 197.54 360.505 202.744 377.127 215.573L302.014 258.937C298.848 260.764 296.898 264.144 296.898 267.798V369.346L268.065 352.699C266.043 351.531 264.776 349.353 264.776 347.017V269.691V269.693ZM203.391 316.454C209.244 294.608 224.854 277.978 244.276 269.999V356.73C244.276 360.384 246.226 363.763 249.392 365.591L337.337 416.365L308.503 433.013C306.481 434.181 303.961 434.188 301.939 433.02L234.971 394.357C208.868 378.789 195.138 347.261 203.391 316.454ZM244.775 470.9C228.781 454.906 222.186 433.075 224.986 412.264L300.096 455.63C303.263 457.457 307.164 457.457 310.328 455.63L398.273 404.856V438.149C398.273 440.485 397.022 442.671 394.997 443.839L328.029 482.502C301.495 497.322 267.327 493.452 244.772 470.9H244.775ZM450.897 445.982C450.466 476.371 430.029 504.027 399.22 512.283C377.373 518.136 355.168 512.932 338.547 500.102L413.659 456.738C416.826 454.911 418.775 451.532 418.775 447.877V346.329L447.609 362.977C449.631 364.145 450.897 366.323 450.897 368.659V445.985V445.982ZM512.282 399.221C506.429 421.068 490.819 437.697 471.397 445.676V358.946C471.397 355.292 469.448 351.912 466.281 350.085L378.336 299.311L407.17 282.663C409.192 281.495 411.712 281.487 413.734 282.655L480.702 321.318C506.805 336.887 520.536 368.415 512.282 399.221Z" fill="black"/>
+</svg>
+  jumb   )jumdcbor  Ä  ™ 8õqc2pa.actions.v2    Îcbor¢gactionsÅ§factionlc2pa.createdqdigitalSourceTypexFhttp://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMediamsoftwareAgent¢dnamekgpt-6.1-solgversionkgpt-6.1-soldwhenx2026-11-04T18:47:45.167694ZrallActionsIncludedÙ   §jumb   (jumdcbor  Ä  ™ 8õqc2pa.hash.data    tcbor•jexclusionsÅ¢estartè÷flength^‡dnamenjumbf manifestcalgfsha256dhashX E‹\ûÆƒ—dÂÙJ˚GvÖCu«n%ÖCy>≥ë·cpad@  âjumb   'jumdc2cl  Ä  ™ 8õqc2pa.claim.v2   Zcbor¶jinstanceIDx,xmp:iid:3095b085-674b-4fb0-8ccc-7da4760a35e6tclaim_generator_info£dnamegChatGPTdicon¢curlx$self#jumbf=c2pa.assertions/c2pa.icondhashX u>=W1í≥®NÎL˚¡åt∑'w÷–6«e6„ÒkspecVersione2.2.0isignaturexMself#jumbf=/c2pa/urn:c2pa:00801920-6530-4973-a2c9-4842095d87a4/c2pa.signaturercreated_assertionsÉ¢curlx$self#jumbf=c2pa.assertions/c2pa.icondhashX u>=W1í≥®NÎL˚¡åt∑'w÷–6«e6„Ò¢curlx*self#jumbf=c2pa.assertions/c2pa.actions.v2dhashX óhTKJ&ÅÇ ïœæ‚ß&Ò;ËƒÎ~1¸õ% &Òy¢curlx)self#jumbf=c2pa.assertions/c2pa.hash.datadhashX éÎy˝¬
+{®¸}E0ÙX'õ‡ª’è˛SàøµhbKhdc:titleiimage.pdfcalgfsha256  P8jumb   (jumdc2cs  Ä  ™ 8õqc2pa.signature   Pcbor“ÑYË¢8$!ÇYà0ÇÑ0Çl†•¸ÈpåÚÄ1ÓDds0	*ÜHÜ˜ 0J1!0USSL.com C2PA ICA R1 202510U
+SSL Corporation10	UUS0260422155105Z270423155104Z0G10	UUS10U
+OpenAI OpCo, LLC10UOpenAI Media Service0Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç ù∫jLMóÍÅâ∂—æ^XNr°ôﬂiq|Â!#”Å¢5úL£J<Ôn+øÊdÆ◊ÑKi$ZcœÍv
+ê≤e€|<ç·˛¡3wØ'ﬁ; :¥cáòÕMúø¥3D™T07F∏˝öyDsWU£c|›¨X/ÊzÆﬁ•ò√ìNHZ¯‡|§íK’l∫ ¬*»íæu‘îgµW™jöm00,◊Uaåj“S∂ x^ECûNí£ÄÒØ[—≤Î˛ãÔ∫◊7	ï´d-ô…áö¯ø.–ÁcÄñöy†7ì6£5…H…,òcÈDõ5¨πßSlúhs»
+9ÃIÛ £Çg0Çc0Uˇ0 0U#0Ä9=G‹óèØà{MsÕÂÓ§•*0o+c0a09+0Ü-http://crt-c2pa.ssl.com/SSL.com-C2PA-I-R1.cer0$+0Ühttp://ocsp-c2pa.ssl.com0U 00
++ÉË^0)U%"0 ++$
++ÉË^0UÛùM‘Àùr¯F
+vG•hOt0Uˇ¿0	+ÉË^
++ÉË^
+03	+ÉË^&$019bc403-5cd7-7669-afe6-fdb17177d4280	*ÜHÜ˜ Ç Ç8óle°7 Ò˘Ìt∫’¶[5ıglœ+fi@Õı¸“rVﬂ ï(Í¯fﬁBC=¯x†h(â≠µÓ¸ı2“å∏_ÁlÄnÎ[|ó[0Á.B∏∆pö˛˛ 	¨5F’†åIEÄ√∫íU«Zùo“Îÿyõñ:ºDê44}ÙA•3ó/.lQR
+m=I∞À«ÜXÃ‹Óû.È∆9∏3\ ⁄Ó W3T.p(J%)Oí|.“˙›g.zËPx9Q∫É:⁄à~ê#êíıbXöÂ¬®sÜû≈ÿqÈÔ\d{ëÓ7/vòxVdÁoB—}íºÖjomdÖÿˇ"ñÌπÔ≤–\Ñ}h]5[K±≈iHyÊhé†ƒaò:L¯¿$yÂ¶h‡Ô˝÷ê÷.-AduV_ìî∂°úä<∂¿ËmÛ≈CÁv,h§ÚÊÀãàïË{*r$Å=!∆cm/%Ä£ô[™)•˝GÍ·˜kÂ˚[P&m+°Ç]1ı›b®|2‹L«•,r0PÄWìÇ‚ËÆ≥ßØY4ÆrÔ*ùÆx¨‚3ÏSµ…ô“(®*7°N´¸Ã~Xõ'mE·¥*úΩ0W°1. .…‚»T€°íOæ$5ò˛/i‹∏M„ﬁ/Ëlı¡ä‚”˛rw”®+‘WóÆáÿ æì∂âYS0ÇO0Ç7†'+c»ÃM-õÑQrlÙú^2QÆﬁ0	*ÜHÜ˜ 0O1&0$USSL.com C2PA RSA Root CA 202510U
+SSL Corporation10	UUS0251222181730Z301221181730Z0J1!0USSL.com C2PA ICA R1 202510U
+SSL Corporation10	UUS0Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç À:¥Õ∏úÀ)V∏yß¯kˆ˘ÿèr√¶ò≠*A⁄a.GRΩtQæ]ÏzÇ∂¿˚˙Ë'•ãË˛bÛ`Ò_H ssï‰NnÃNz5ﬁX·◊Ç‹“GCwõﬂHàyü£9§YN^‡NGóÚuB◊v=∂§"‹Ì∆o‘rFå÷Q«µ∑zÚì˘#'’ÄPuäp†hÈÁºÑ(|ú*Í)©¿/˛…vFU∞/cÍ}ûÙ∞D§@ﬁ@6\DäTkWHˇªo§’Íé¬◊|ÿºŒiø† MìE;ô.y“œûü)ªFŸxc0ñ3Qú^ìm˙Â4JXx≥)l]|∏uï<ôw!{ÿ¥JÎ⁄Õ«
+÷…¢ﬁÆó≥∂Qñ⁄íõ√≤ªPƒ˛∂§Lï]-íjObÂ‡*˜i†ú’πì ⁄—ª^O∆Ø˘)L–…ÏÎÛ≤qP{v'hë˘Pà∏w5ÿÕ°·◊”)ÁJ∆áTY$¬g≤m	5€∫Œ∏F•‡ã⁄·ßüjŒ`“ƒ˜¡ﬁsyU‡p¥ÔÍÃ«˛vâNf
+ià-Ì√F¢*‰å‘úWF-Xb’ ®˙~¯¬ŸajÀ5]†ì£≤e®/ÌÔòÁ¸~∫HÙ™°q¸ìØÍßNsài’B¿˘ÑíÖOÀT≥=:¯›)ey Cûñ∏áXñ!Ô—ë{ £Ç&0Ç"0Uˇ0ˇ 0Uˇ0)U%"0 ++$
++ÉË^0U9=G‹óèØà{MsÕÂÓ§•*0U 00
++ÉË^0U#0Ä¸*Ju:Ä˙ôcìsWÏæì∞}√{0x+l0j0$+0Ühttp://ocsp-c2pa.ssl.com0B+0Ü6http://crt-c2pa.ssl.com/SSL.com-C2PA-Root-2025-RSA.cer0	*ÜHÜ˜ Ç Œ6˙>Ôñ6-éØUfˇ{+ kVıÀ≠Ω*Å≠•¶–M£>ì‰ìi’‰å®nÊ7T‚%úÏef(<3=¢ö¢ªÕgdJÁæt!°n√´&ƒ;,⁄Uπ˝GN‡çxõ7Éƒt;≈GaÔmAr§€]CS…ñNÂ‡:ﬂ®›.—ØXó÷ÁÙ_r#<kœΩ9´åì®èßvY>·íı˜Ÿ˚Fb´nn‘àF†≥/*j_•N⁄¯‘¸ÃŸ£<©wE
+¡˘òπ9ÀÃ°q¿*Çq”‰ˆ%‚Q!m÷ﬂ‰SçoJ}é^¿∫’wy!ÅzŒÌ˜õé∂≤äBVùèkA*˛kúãÓ£(œ_ÛÈ–d÷Ó¬âKÎíœıØ¬'M∏ë°7%ôÊ˝Ä‹Ùº«7{æ¥-gX/Á√≥ãqÂDz0∂•≤u>[#~;”T¶:π«Ã3’j5zÅv/˛W⁄i¯>?ÔTèã{F√cû˙Ìƒ/pÑ+ˆVÇÙßÀ$◊l^${:Ω©X;i≥úè“ptˇãn&ª√´E«SñúGµ∆F´^ı¸àãh£5Â|jïeµ´Îπˇ∫∏‡õJG≤ŒÏ/â}ÓØúMƒ…Œı2=è˜&4˛"ãzÌ˘^^g_Q[€$V˚—Y°∑ﬁöf	∂—Ü.˙}~ïyõDf|6Öˆı£gsigTst2°itstTokensÅ°cvalYä0ÇÜ	*ÜHÜ˜†Çw0Çs10	`ÜHe 0ÅÜ*ÜHÜ˜	†wu0s
++Éø0010	`ÜHe  ®2ﬂ0‹–6…;Ôy˜\Æñn…&"Z∫å)à˘K%L“•11,[¯:=J20261104184745.985117Z0Ä[eA—Èì†Çf0Çˆ0Ç^†a€F(2äåçJ∑ø˛`„l?q∑0	*ÜHÜ˜ 0{10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Issuing CA0260408174626Z370709174626Z0u10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Leaf0Ç¢0	*ÜHÜ˜ Çè 0ÇäÇÅ Í ≈≠î˝˝'ü«xßa ˇ)a*˚°àÕ_®¢óùâ/ãë»º∞ñê=UÇ¡ñé6j≠âiËê€,D2É®
+ÕwÂ5ËÓ®d[˛∏‡éùÁ °(√5›ß7È"˜	Móö¥Ñs¿.|©PG(†¥i∞á)zY˛5B˘ŸiRJ 7ÚhÃÒ-∑Çñ KF\=§Ü∏KEf8¢NM' ï∫uÃNájüt√ $_ƒ~\Æ˛ÛïÌ ëﬂ<ıÜõ*^÷–›…˙»M√…ÑZI,‰8s`R∏LÓ∆Û∑∂ÿ›j©Œ ∫]÷ƒ\5dÚ#S?bée]p+‘…k	ÅERËWÌZF]⁄]vú%yhÉQ§òÑuëròUˇÿ„Cb±Ìig'Aº≈èÚj+ÉIË·-4ª9ØgΩ¥ï»≤ΩEgÕràî_UK,≠ØÌ•Ù$Øw>ÉädQèëå9ñK∞=Æ˙ô°>å=æ6°.ıcµ £x0v0Uˇ0 0Uˇ¿0U%ˇ0
++0U§'TÇ¢äÄ{=≈ÜÕ?pŸ¬ÉôQx0U#0ÄÚ∞«T=#CÖ‹ s–rÄ=∏®0	*ÜHÜ˜ ÇÅ  ˚$OA¿¿ºò≤2 ç ôH5OƒFV~ß>?∂•#˘*H>‡QùE@x¡ªÉNìP…õ'ñhﬂMŒÚˆ“y´ÔÍ¡⁄?ıòYÊpÕâÙÓGã™ÀÏˇå~·FÿëÊú∏‰4Fˇa“x¯}89„RÌ_fËs¿ r;‰®´éÜ*£7!˘;ﬂ{\TÿL«j*KœCt`Äs£…—wØá©˝µ±Ñjnøà*Œö°ö´¢ûÇH7≈cQó€R|og…iB’œı˚≠^ãê‚‡y<.Éjû•Ë%AèÖÌ‰¡†:ç˛ùRPÔáﬁ·dÕU˘! ﬂ∂)Ôü'n—∫4F´J"OÁbw›E#›a-¬1)èƒπ~y´¥W‘¡Ïœ·\{eI∞ÎM´§«'@N¶¥µèœ|√¥Cßv”^0cÓ®Æ5(td´Z5„[/:>N
+a÷0MCõˇN.∆!π>:, W0ujédK¢–	—◊†g&Amg¯pv∏%&V˘ë&'√KI0Ç~0Çf†ç ∆≈≈⁄∞ºÒNï•Íº0	*ÜHÜ˜ 0x10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Root CA0 260408174626Z21260409174626Z0{10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Issuing CA0Ç¢0	*ÜHÜ˜ Çè 0ÇäÇÅ âº‘π‚»°æaªﬁ<df~ßæúm”©0&<Ù‡k 9ﬂï4Ì©¢eH€7Ü2ÉéÃ
+J†¿Û4l†¿òÕ+ü•ÙÀ|Ÿ&ﬁ~…M¢Ôc[ëÊˆY®“˙N˘Ÿ8+ZÕ`ZòÅò®◊S∆„÷.H¨CW	ÈîÚG˘lEä`∑˜Æ/^¢5NÖ8Öiü4ù–MÿC=Õ4m¸cì¸”pªJËvËjNfI†Ì¸¯æÔö∑®w¨Ô∑8Ãπ‘*3ƒv÷@wÀ˛«]-@”ﬁã<¿÷@AôÀî?,} kR¸û P∑	GE·#U˙±OoTòïÙ}∫¯h·"z‹äëCã∂.C±b†æ $é.Ôø§—MË∏?1œ&=≈ PÍÚŸ$ dÌ’sû.px™ﬁV<˘‘Ä¢Ë≠Øˆ˚®£\Àh´D€0wÚƒ4tkUm∆á˚Ú2<ûqE˜ÏP˚˛÷1&ª–ƒMa‚B€Ø√+n_+Ê‚∞Ôç\DÕ¿s}è¢ÈΩmÇº%eÑ0iÌ £{0y0Uˇ0ˇ 0Uˇ0U%0
++0UÚ∞«T=#CÖ‹ s–rÄ=∏®0U#0ÄX¬@†<Gv+®Ên®ëñéñ»∑Ÿ‰0	*ÜHÜ˜ Ç íÏ7\ﬁlÎd⁄Æ°	0rÆ‹rı;ºz=÷∆·/ˆÉ3}ËW@NLô™k‘ôŸã€k÷L¯ –Y3”°†8\#àD$˚á·ˆì'º°ÌL_g]ˇ5´1“Ï{‘@C7O¬Ñú∫d»∞¢~ö6¯·–Ç≥PC≤‡UΩÄî»YRNJtﬁ]«EXõ∑˙0™;‹Gº’.,π8c,yZ∑›U≠=BﬂàœÒh˛s ‘Z∑ﬁ$óë¿Ág˛‹¶
+Û•F≥QœçØ_„»∏@∆Ω„˘÷Kq–d]Âd¬K¿^w—=«[ûœ{˝îîÁKQ⁄˚dÙ´5îÒˆæ~+›≤ö=P›P√ñdém´sü(;w–óÌoEO±3._FÎÉ∂©aº◊ÇÆ¯Äo¬„i0Êm|:Dí+ò-Ø‹4¡æ•*HÁá»ﬁ8µ3 „ÑPpÒ≤KﬁçOˆë‹_Ö˙ÒÊ—◊ ßÓ¥üˆ!x)Å„pXwÜ§:KóÉFË⁄¬jv…©À!Eæe±†Ü.ÄºYKMõCm¥◊Ñ‡¸’»aêCéjù√Ò!<Ñ]˛;÷ÿ#9E_q˙2˝†ÄïDµO Â√t˝‚NárÜÙQáΩ‘µ+5lí§;kjù∫˝¿;úv¬’9I⁄„î>Pj◊L‚âaùÔÎœ≈√@npz80ÇÊ0ÇŒ†P;lâå$3,è˜Oé˚}ÇÏ0	*ÜHÜ˜ 0x10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Root CA0 260408174625Z21260409174625Z0x10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Root CA0Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç ˆíÈ“∫≠û·¨u®Vÿ™±≥jí_ñyıí∑-$¯ø¿Ø`æ¡öÕyö‹lö˛6ö¡ò§?‰,ù∫••Ps≥
+¬˘ÛƒI/xΩ“ÏºÁ?Ùõ—Ú†a¢,â% Q˘%ú“∆/ÙâƒA˛&”m5ÕÏª5`@®ÖQæˆÓêòÒ*ÿùzkjŸ.ŸcÛÂ\)≈Ü"¡ähÕÎ8û©Pñ[#C˚8ˇB|;:°Q/%…H‹1ˇPrÓ|°wÕoÅaÛ?ønË“±¶6‰k2˚˛w®^õ\››1êLéeˇÅÀAŒ(1S CŒHn}÷d≥)‰¥.:∑TZrVWÛ®j}ÔÊa›e»H	Iô2t
+¢Ã›ì S¨#ΩÇÖ ±ÔæÌ°w Ó:F3¢ûÏØÈ1f¥fo≤âì†~ï!ŒA¯^éÈÕπ¿’3]x––'1œP0rs⁄j¬¿ìœ≠‹dáˆ˚Nàvı>Ôˇí,ôw.ˆ‹ò∂ù	:˝Ù	«è_ZÈ~H	+µäÉÚ[<,Øë¢ùA∑Rh—ø∞¿⁄O`ΩÓ)™Ìáçq\(åçà£%cEÿ¸{aèlFT;\…∞ÇØÉ»±#?ü[Ó¢◊Tµ*SÆªÖ€¶˙óûÏÑârÛz@…∂ÖXG[Ò$a9¢Lﬁÿ∆®"Úûø[L,À £f0d0Uˇ0ˇ0Uˇ0UX¬@†<Gv+®Ên®ëñéñ»∑Ÿ‰0U#0ÄX¬@†<Gv+®Ên®ëñéñ»∑Ÿ‰0	*ÜHÜ˜ Ç X¯ÅëòÚla˛»Ü÷[Ñ¶÷æ∏¶]]IÀ∏°)Õ-ù∏X˘Ñâ=<¯o’j¥*¢UígÅô^µT˚öFÄ„Q S¿¡àWﬁÔÇU~„Ù}Î&¸Éˇ!®¡¨ﬁ€ì´Õ–0v:ìùŒ™g9.Ätﬂm~v/ÈÍPAã8=lÂ‡>Ó/€dT6^æbE∂—!¥Ä<åÎ⁄ú÷J©’Te[k—X~¿IáÎÎK_í;î◊öÜˆ°YŒG8¨√∞td—¿R;°±{(k·ió¯(;'ˇÆ§û˜eÀ†ÙÍπΩîŒD‚ò±
+HhÓU©!•`è˛ ÷}—{Ü úÛ®x–∆⁄@.»Å\b®*¡˚VÁyéØÏÂ€”p˛FÃc®dÒ<ÈØ•dº^øÖ-∞Œ„π”§◊RªpãÜù˚.ø
+ˆ“U+#B+C\Ï°Ça?œqÌ∞˜óÈ‰À¬<¸¨w∑∂‹ ¡LÈâ≤≤/√~ídúµÑﬁÃñ˝â∞KµC}“È≠Ü˝Ÿ-üΩ Ó¿¥GV#|HëNgâ {b¡…^UÒˆ∆Q#WoÔáæ Fyæî±» (ùïäà&UfRÔŸK∫®ZÈ¬,≠ü√\BÛ°ı'dyqå
+Zû˝π˘Eyp·jµ7ñéX˝EøT%åÉ=Ÿ&3#–Xw¶∏1Çh0Çd0Åì0{10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Issuing CAa€F(2äåçJ∑ø˛`„l?q∑0	`ÜHe †Ç%0	*ÜHÜ˜	1*ÜHÜ˜	0/	*ÜHÜ˜	1" ´<ÔBπ}iel3E Îªlœ!‹ÿv˚d|Fpû0Å’*ÜHÜ˜	/1Å≈0Å¬0Åø0Åº ΩOπ≤êLÅ6gànÔA·m˛Ÿ"ùø[íJ–¢ƒ`F"z0Åó0§}0{10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Issuing CAa€F(2äåçJ∑ø˛`„l?q∑0	*ÜHÜ˜ ÇÄŒ	ø}.{”{¿L—ˇ°Ãﬁ˝o?;ÎuSrzõMë0‘ïNtJûc„á®ƒG¿Ô¯ÑŒ3êØ€ôA<÷§Äqiå`ã∑á3ˇ<'—5S?˜5t%±s%¬∑4¶IíHÍ	ÑZÿƒ^ütÜ ñF5HS%ÑjJ˛>¥9B«Y˙Ò±Å}u/çñää”V•˚ãh«iıoW jM¯$PVWW‘A\†–•Ω–u˝áÄ¬ÌÄp˜ÍÌ/’cœ‘ôÊ¨^ö◊i_ÖM\îK≈ü≠Äµ-E«MÆÁÜÃeäOeò¡ì/+ò*>	°¬
+øHùÛ†÷D˘È¸¨ü†Fb^<8±EúËtÊ„7C7ﬁE}ö[‚üµÏ˚ÈÓíV,rº„‰rÛMduëWØ7wıŸf“¨
+ÍGG–K¶ó¨Åü∂»wF√ôë(•Xã≤£§ZD•à-¯≥ë¥TÌM˚q
+H˝Xõ≠ ê)@≤≠3bj`ˆ¨o‰3ÅÏΩ∫Ùó–∆π∫ÕÑr27ÕÎerVals°hocspValsÅY◊0Ç”
+ †ÇÃ0Ç»	+0Çπ0Çµ0ÅÈ¢Àcól‚ù≠‡-e&¶:tiô20261104113627Z0Åò0Åï0I0	+ ﬂÇ7S^Sÿ3±‡=$5ÒuÊ·
+9=G‹óèØà{MsÕÂÓ§•*•¸ÈpåÚÄ1ÓDdsÄ 20261104113627Z†20261111113626Z°"0 0	+020161106113627Z°#0!0	+0è%¯ g®÷ã 'Ã0	*ÜHÜ˜ ÇÅ åF `dcá3§kg∂ÏwW~¥MVe![U°∞∏ªD÷ø+«\Ü◊√◊¢«±#4ˇ¢üÌñ'ä◊'¡<«€®∞€vå,Hû◊ù_∆—Ã,ä]êå„mFLm∑ñΩ:ÜˇΩÄöˆDám]¿9áú”ÌÄ†EÎ@ú∑~ˆì7Czê∂…ó\WàÄ¡V§éÿÒ[Óôu˜°»π6£YT&ó~˝®œv…¬Æÿ∂ i_h∞‘ï{Ö|œè}“∫«…Ö≠:„çDï‹GJH+&Tâ€ö˝fòÓPxKR)Dº˙…{XüPwaÇ™£
+'Ÿ¡#ˇ*’eGm‡CÌÿ:‹Ö„6À0ƒnˇ#ÉÕdBﬂÛÌ\Ó+ÈWÃ¢CÂL%‘`SÍØÒqÂ;ññ¨∆≥¢ÂæùÍŒ≤˙ø‹	üíﬁ‘∫•N√·ì*àµì„ãÈiCõªƒ•j	√ﬁî¬˘Âw
+ï¬˛Kîs„…&ßƒµ%ÜY≠Ÿ·òç–ƒ˘O·ØÁk–qÓ=†Ç10Ç-0Ç)0Ç†97«k˜”!òS§¢°îR/0	*ÜHÜ˜ 0J1!0USSL.com C2PA ICA R1 202510U
+SSL Corporation10	UUS0261104111802Z271104111801Z0M10	UUS10U
+SSl Corp1+0)U"SSL.com C2PA ICA R1 OCSP Responder0Ç¢0	*ÜHÜ˜ Çè 0ÇäÇÅ ≤›W §¢∫øºÇ	≤Ï~ö|j>˝&ùˆ#zdÍµ9´3±ÀùüüLK≥/„æÁ}VŒµXl°/È@d¸·∞ıuî€ßæjH*àV#ïMJ˙ö,M/µp˜é&ÆR⁄8Ê<∫<o9î‡£ShoñyC]ÑÙ†9·Jìp¨ÖÜΩµ?°Æìi_⁄"]iÈ7• 5æk©´g¯  5JD?y¨JtyøüSj±øÏ∏*—G¨ø±ªÅhïHf"c9‹Ï⁄ÀrŸ√◊IÛËÌG.VòÅ~œÔÀÛóN¶zÊQÛm‡bÆ‘éê·Eúˆ∆GËÈâ„W„Ä2JTååy4jµ≠î.ã»¿¬§Üáá¿•_ÇÖ9hˇıÙòÀY†¬¨:ùïà"fn,_ÀAqÒY4≤88…˜Åˇ,GQ( •ö H±¥J=Cà ¡?ˆU"ƒÚ£Y˜≤÷ ˘dK˝ƒ®N4°^◊aÂ‡m¶πiõE°ß‘èH≥≈æ¡õ £Åá0ÅÑ0Uˇ0 0U#0Ä9=G‹óèØà{MsÕÂÓ§•*0	+0 0U%0
++	0UÀcól‚ù≠‡-e&¶:tiô0UˇÄ0	*ÜHÜ˜ Ç 
+r—⁄Z>t["_© /˚Ü2º&Í≈x“F}p91‹ádcwÏÜûÇ%z—æ√«∏ÆL“FåJÍ”•øØÅ@–Ò˝$~tñÜòâ; ﬁc˚'ÙsqH“PõÃhæÓÁmW'°Ÿñ˘ƒ@ÜÉ›ª~ÇÃ8–¥ñ»±rÇ@`åöÙq“Vòä
+å°+L8 Ö™ΩïöæﬁáÛ{ºa<f.√**(<uI\√ãV¨%∂3«!'y(’?ypπNŸÑ.ûÌu∞ƒ	‘Ó˙|Êgkñ€M†F	H√	Ô4—8%v»z@É∫a¸|Éº‚,„‚Yû∞VÖ6˝˘Î¢!ká-â3("Ö3zñWq\Aπo¬dFÈ[Ü“>ç~Ù˝}ÃîA÷™50ÃM"zÓÖÚÆ#ÿ€`ÉÏπÙ†KîÏ	Ú=S“ømjåˇø»÷∏Íê<UmiÓ¨kPIÿe¬⁄/ÚaË9í‡;O“ÒﬂΩ“
+∏ã«ïtçPogZÒ∑f}∆ÿ=®/]êvä∞Ü<â¢6%ß5,®$ø–Q~·≈M”$R>•≠ﬂ¢¯gÓÓ˝˙ôíÛ:˛i(ÙeI÷`_˚ ◊‡ËPﬁÅ<	fÄ/à
+'U¥˚¶û*xW˘CÜ'Bx˛â◊≈Ï=.Ç¸eôkZYBÉÒ#Ü”≠≠%&hp¡‘ÿ˚'®ªLÏ¶ƒ∏5∑‹ïcpadY&v                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ˆY ôY=ÿ1m5„_äı?Á/bBÁÍ8ÓLbˇ!€∑}DæI/t≤~=ªSQ‡1'@IùÓnåXÜœ€lÜÌùê8†k±ó,¶é :ïË¨“¿™OãÒòÚ˜√‚|(ñ˜p≠0≈û «“´ƒ≈y#≠˙Áı∏Ê$∞óˇ¿B?$!˝˝ÈÕÜ;7¸Î —5ÂÌﬁE—+T,4w∂∫"<I°Ü?A®™;-éﬂë16ÕhKè˝∫#RG‡#ÛùΩ>îÅ}=+®œë'Fg	á¸†M›Coÿr≥ΩÇ’^˛-H`Ú6ÁÈò5 ]fV›<Y˙Ö/(¥òÓõtTπ≠≈f
+endstream
+endobj
+22 0 obj
+<< /AFRelationship /C2PA_Manifest /Desc (Content Credentials) /F (Content Credentials) /EF << /F 21 0 R >> /Subtype (application/c2pa) /Type /Filespec /UF (Content Credentials) >>
+endobj
+xref
+1 1
+0000036602 00001 n 
+21 2
+0000036737 00000 n 
+0000061128 00000 n 
+trailer
+<< /Size 23 /Root 1 1 R /Prev 36115 >>
+startxref
+61324
+%%EOF

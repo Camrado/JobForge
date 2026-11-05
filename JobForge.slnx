@@ -1,1 +1,3 @@
-<Solution />
+<Solution>
+  <Project Path="src/JobForge.ConsoleValidator/JobForge.ConsoleValidator.csproj" />
+</Solution>
