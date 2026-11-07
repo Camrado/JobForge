@@ -13,7 +13,7 @@ public static class DependencyInjection
     public static IServiceCollection AddConsoleValidator(this IServiceCollection services)
     {
         services.AddSingleton<ILineValidator, LineValidator>();
-        services.AddSingleton<IFileValidator, SequentialFileValidator>();
+        services.AddSingleton<IFileValidator, ConcurrentFileValidator>();
         services.AddSingleton<IReportPrinter, ConsoleReportPrinter>();
         services.AddSingleton<ValidatorApp>();
 
