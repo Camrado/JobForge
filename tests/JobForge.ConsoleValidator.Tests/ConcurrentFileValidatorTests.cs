@@ -53,24 +53,31 @@ public class ConcurrentFileValidatorTests : IDisposable
     // ---------- Checkpoint 4: backpressure and the concurrency limit ----------
 
     [Fact]
-    public async Task Backpressure_AtMostFourActive_AndNothingLost()
+    public async Task Backpressure_ProducerWaitsOnFullChannel_AndResumesWhenOneConsumerMoves()
     {
         var path = CreateTempFile(Enumerable.Repeat(ValidLine, 200));
-        using var gate = new GatedLineValidator();
-        var sut = new ConcurrentFileValidator(gate);
+        using var gate = new ConsumerGate();
+        var probe = new ProducerBlockedProbe();
+        var sut = CreateHookedValidator(gate, probe);
 
         var run = sut.ValidateAsync(path, CancellationToken.None);
 
-        await gate.WaitForStartedAsync(4, Timeout);
-        await Task.Delay(200); // give a 5th call the chance to start, if the limit were broken
-
+        // 4 records held by consumers + 32 waiting in the channel = 36, so writing line 37 must wait.
+        await probe.BlockedOn(37).WaitAsync(Timeout);
         Assert.Equal(4, gate.Started);
         Assert.True(gate.PeakActive <= 4, $"Peak active was {gate.PeakActive}");
+
+        // While nobody moves, the write for line 37 stays pending.
+        await Task.Delay(200);
+        Assert.False(probe.HasBlockedOn(38));
+        Assert.Equal(4, gate.Started);
         Assert.False(run.IsCompleted);
 
-        // Release one consumer: it finishes its record, takes another and blocks again.
+        // Release one consumer: it finishes its record and takes the next one, which frees a slot.
+        // Line 37 then gets written, and the producer blocks again on line 38.
         gate.ReleaseOne();
-        await gate.WaitForStartedAsync(5, Timeout);
+        await probe.BlockedOn(38).WaitAsync(Timeout);
+        Assert.Equal(5, gate.Started);
         Assert.True(gate.PeakActive <= 4, $"Peak active was {gate.PeakActive}");
 
         gate.Open();
@@ -79,49 +86,68 @@ public class ConcurrentFileValidatorTests : IDisposable
         Assert.Equal(200, report.Total);
         Assert.Equal(200, report.Valid);
         Assert.True(gate.PeakActive <= 4, $"Peak active was {gate.PeakActive}");
-        // Not asserted: that the producer's 33rd write is pending. See the note in the report.
+    }
+
+    [Fact]
+    public async Task Backpressure_SmallCapacity_ProducerBlocksEarlier()
+    {
+        var path = CreateTempFile(Enumerable.Repeat(ValidLine, 10));
+        using var gate = new ConsumerGate();
+        var probe = new ProducerBlockedProbe();
+        var sut = CreateHookedValidator(gate, probe, channelCapacity: 2, workerCount: 1);
+
+        var run = sut.ValidateAsync(path, CancellationToken.None);
+
+        // 1 held + 2 in the channel = 3, so writing line 4 must wait.
+        await probe.BlockedOn(4).WaitAsync(Timeout);
+        Assert.Equal(1, gate.Started);
+
+        gate.Open();
+        var report = await run.WaitAsync(Timeout);
+        Assert.Equal(10, report.Total);
     }
 
     // ---------- Checkpoint 5: cancel while the producer is blocked ----------
 
     [Fact]
-    public async Task CancelWhileBlocked_ThrowsOperationCanceled_AndReturnsNoReport()
+    public async Task CancelWhileBlocked_ThrowsOperationCanceled_AndEveryoneExits()
     {
         var path = CreateTempFile(Enumerable.Repeat(ValidLine, 200));
-        using var gate = new GatedLineValidator();
-        var sut = new ConcurrentFileValidator(gate);
+        using var gate = new ConsumerGate();
+        var probe = new ProducerBlockedProbe();
+        var sut = CreateHookedValidator(gate, probe);
         using var callerCts = new CancellationTokenSource();
 
         var run = sut.ValidateAsync(path, callerCts.Token);
-        await gate.WaitForStartedAsync(4, Timeout);
+        await probe.BlockedOn(37).WaitAsync(Timeout);
 
+        // Cancel without opening the gate: the paused consumers must wake up from the token alone.
         await callerCts.CancelAsync();
-        // A blocked Validate call can't see the token, so let the consumer threads go.
-        gate.Open();
 
         await Assert.ThrowsAnyAsync<OperationCanceledException>(() => run.WaitAsync(Timeout));
+        Assert.Equal(4, gate.CanceledWaits);
         Assert.Equal(0, gate.Active);
     }
 
     // ---------- Checkpoint 6: a consumer fails while the producer is blocked ----------
 
     [Fact]
-    public async Task ConsumerFailsWhileBlocked_CallerSeesTheOriginalException()
+    public async Task ConsumerFailsWhileBlocked_CallerSeesTheOriginalException_AndEveryoneExits()
     {
         var path = CreateTempFile(Enumerable.Repeat(ValidLine, 200));
-        using var gate = new GatedLineValidator();
-        var sut = new ConcurrentFileValidator(gate);
+        using var gate = new ConsumerGate();
+        var probe = new ProducerBlockedProbe();
+        var sut = CreateHookedValidator(gate, probe);
 
         var run = sut.ValidateAsync(path, CancellationToken.None);
-        await gate.WaitForStartedAsync(4, Timeout);
+        await probe.BlockedOn(37).WaitAsync(Timeout);
 
+        // One consumer throws. The other three stay paused until the stop signal reaches them.
         gate.ReleaseOneAndThrow();
-        await gate.Thrown.WaitAsync(Timeout);
-        // The other three calls are blocked and can't see the stop signal, so let them go.
-        gate.Open();
 
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() => run.WaitAsync(Timeout));
         Assert.Equal("boom", ex.Message);
+        Assert.Equal(3, gate.CanceledWaits);
         Assert.Equal(0, gate.Active);
     }
 
@@ -153,6 +179,21 @@ public class ConcurrentFileValidatorTests : IDisposable
     }
 
     // ---------- Helpers ----------
+
+    private static ConcurrentFileValidator CreateHookedValidator(
+        ConsumerGate gate,
+        ProducerBlockedProbe probe,
+        int channelCapacity = 32,
+        int workerCount = 4)
+    {
+        return new ConcurrentFileValidator(new LineValidator(), new ConcurrentValidatorOptions
+        {
+            ChannelCapacity = channelCapacity,
+            WorkerCount = workerCount,
+            OnRecordTaken = gate.OnRecordTaken,
+            OnProducerBlocked = probe.OnBlocked,
+        });
+    }
 
     private async Task AssertSameReportAsync(string path, ILineValidator concurrentLineValidator, TimeSpan? timeout = null)
     {

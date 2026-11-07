@@ -3,14 +3,15 @@ using JobForge.ConsoleValidator.Output;
 
 namespace JobForge.ConsoleValidator.Validation;
 
-public sealed class ConcurrentFileValidator(ILineValidator lineValidator) : IFileValidator
+public sealed class ConcurrentFileValidator(
+    ILineValidator lineValidator,
+    ConcurrentValidatorOptions? options = null) : IFileValidator
 {
+    private readonly ConcurrentValidatorOptions _options = options ?? new ConcurrentValidatorOptions();
+
     public async Task<ValidationReportDto> ValidateAsync(string path, CancellationToken cancellationToken)
     {
-        int channelCapacity = 32;
-        int workerCount = 4;
-
-        var channel = Channel.CreateBounded<LineRecordDto>(new BoundedChannelOptions(channelCapacity)
+        var channel = Channel.CreateBounded<LineRecordDto>(new BoundedChannelOptions(_options.ChannelCapacity)
         {
             FullMode = BoundedChannelFullMode.Wait,
             SingleWriter = true
@@ -19,7 +20,7 @@ public sealed class ConcurrentFileValidator(ILineValidator lineValidator) : IFil
         using var cts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
 
         var producerTask = GetProducer(path, channel.Writer, cts);
-        var consumerTasks = GetConsumers(workerCount, channel.Reader, cts);
+        var consumerTasks = GetConsumers(_options.WorkerCount, channel.Reader, cts);
 
         await Task.WhenAll(consumerTasks.Append(producerTask));
 
@@ -50,7 +51,14 @@ public sealed class ConcurrentFileValidator(ILineValidator lineValidator) : IFil
                 {
                     lineNumber++;
 
-                    await writer.WriteAsync(new LineRecordDto(lineNumber, line), cts.Token);
+                    var record = new LineRecordDto(lineNumber, line);
+
+                    if (!writer.TryWrite(record))
+                    {
+                        // Test hook
+                        _options.OnProducerBlocked?.Invoke(record);
+                        await writer.WriteAsync(record, cts.Token);
+                    }
                 }
 
                 writer.Complete();
@@ -77,6 +85,12 @@ public sealed class ConcurrentFileValidator(ILineValidator lineValidator) : IFil
             {
                 await foreach (var record in reader.ReadAllAsync(cts.Token))
                 {
+                    // Test hook: lets a test pause this consumer at a wait that sees the stop signal.
+                    if (_options.OnRecordTaken is not null)
+                    {
+                        await _options.OnRecordTaken(record, cts.Token);
+                    }
+
                     accumulator.Add(record.LineNumber, lineValidator.Validate(record.LineText));
                 }
 
