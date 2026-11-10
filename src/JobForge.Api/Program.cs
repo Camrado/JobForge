@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using JobForge.Api;
+using JobForge.Api.Jobs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,8 @@ builder.Services.AddApiValidator();
 
 builder.Services.ConfigureHttpJsonOptions(options =>
     options.SerializerOptions.Converters.Add(new JsonStringEnumConverter()));
+
+builder.Services.AddHostedService<JobWorker>();
 
 var app = builder.Build();
 
