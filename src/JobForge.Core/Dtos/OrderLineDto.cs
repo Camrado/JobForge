@@ -1,4 +1,4 @@
-namespace JobForge.Core.Models;
+namespace JobForge.Core.Dtos;
 
 /// <summary>
 /// The shape of one NDJSON line after deserialization.

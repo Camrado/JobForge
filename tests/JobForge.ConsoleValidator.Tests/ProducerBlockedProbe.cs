@@ -1,4 +1,5 @@
 using System.Collections.Concurrent;
+using JobForge.Core.Dtos;
 using JobForge.Core.Models;
 
 namespace JobForge.ConsoleValidator.Tests;

@@ -1,4 +1,5 @@
 using System.Text.Json;
+using JobForge.Core.Dtos;
 using JobForge.Core.Models;
 
 namespace JobForge.Core.Validation.LineValidator;

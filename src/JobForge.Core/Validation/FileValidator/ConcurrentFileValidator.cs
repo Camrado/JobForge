@@ -1,4 +1,5 @@
 using System.Threading.Channels;
+using JobForge.Core.Dtos;
 using JobForge.Core.Models;
 using JobForge.Core.Report;
 using JobForge.Core.Validation.LineValidator;

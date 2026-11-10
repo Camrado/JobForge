@@ -1,3 +1,4 @@
+using JobForge.Core.Dtos;
 using JobForge.Core.Models;
 using JobForge.Core.Validation.FileValidator;
 using JobForge.Core.Validation.LineValidator;

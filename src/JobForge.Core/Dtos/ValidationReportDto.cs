@@ -1,4 +1,6 @@
-namespace JobForge.Core.Models;
+using JobForge.Core.Models;
+
+namespace JobForge.Core.Dtos;
 
 public sealed record ValidationReportDto(
     int Total,
