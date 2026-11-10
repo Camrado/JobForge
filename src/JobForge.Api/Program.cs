@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using JobForge.Api;
+using JobForge.Api.Endpoints;
 using JobForge.Api.Jobs;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,5 +21,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.MapJobEndpoints();
 
 app.Run();
