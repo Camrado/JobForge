@@ -25,3 +25,5 @@ app.UseHttpsRedirection();
 app.MapJobEndpoints();
 
 app.Run();
+
+public partial class Program;
