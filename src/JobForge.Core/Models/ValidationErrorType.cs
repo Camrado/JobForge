@@ -1,4 +1,4 @@
-namespace JobForge.ConsoleValidator.Validation;
+namespace JobForge.Core.Models;
 
 public enum ValidationErrorType
 {

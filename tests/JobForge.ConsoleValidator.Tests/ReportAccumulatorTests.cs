@@ -1,4 +1,5 @@
-using JobForge.ConsoleValidator.Validation;
+using JobForge.Core.Models;
+using JobForge.Core.Report;
 using Xunit;
 
 namespace JobForge.ConsoleValidator.Tests;

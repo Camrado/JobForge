@@ -1,10 +1,8 @@
-using JobForge.ConsoleValidator.Validation;
-
-namespace JobForge.ConsoleValidator.Output;
+namespace JobForge.Core.Models;
 
 public sealed record ValidationReportDto(
     int Total,
     int Valid,
     int Invalid,
     IReadOnlyDictionary<ValidationErrorType, int> ErrorCounts,
-    IReadOnlyList<InvalidLineSampleDto> Samples);
+    IReadOnlyList<InvalidLineDto> Samples);

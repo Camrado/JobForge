@@ -1,6 +1,6 @@
-using JobForge.ConsoleValidator.Output;
+using JobForge.Core.Models;
 
-namespace JobForge.ConsoleValidator.Validation;
+namespace JobForge.Core.Validation.FileValidator;
 
 /// <summary>
 /// Reads a whole NDJSON file and aggregates the per-line results into a report.

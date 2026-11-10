@@ -1,5 +1,5 @@
 using JobForge.ConsoleValidator.Output;
-using JobForge.ConsoleValidator.Validation;
+using JobForge.Core.Validation.FileValidator;
 using Microsoft.Extensions.Logging;
 
 namespace JobForge.ConsoleValidator;

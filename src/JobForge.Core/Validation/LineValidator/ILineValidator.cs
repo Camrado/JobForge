@@ -1,4 +1,6 @@
-namespace JobForge.ConsoleValidator.Validation;
+using JobForge.Core.Models;
+
+namespace JobForge.Core.Validation.LineValidator;
 
 /// <summary>
 /// Validates a single NDJSON line. No file I/O, no counters: the same rules are reused in 1B.

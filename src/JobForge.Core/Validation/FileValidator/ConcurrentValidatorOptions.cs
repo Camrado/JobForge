@@ -1,4 +1,6 @@
-namespace JobForge.ConsoleValidator.Validation;
+using JobForge.Core.Models;
+
+namespace JobForge.Core.Validation.FileValidator;
 
 public sealed class ConcurrentValidatorOptions
 {

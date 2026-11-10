@@ -1,4 +1,4 @@
-using JobForge.ConsoleValidator.Validation;
+using JobForge.Core.Models;
 
 namespace JobForge.ConsoleValidator.Tests;
 

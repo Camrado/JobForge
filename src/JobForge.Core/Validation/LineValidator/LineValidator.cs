@@ -1,6 +1,7 @@
 using System.Text.Json;
+using JobForge.Core.Models;
 
-namespace JobForge.ConsoleValidator.Validation;
+namespace JobForge.Core.Validation.LineValidator;
 
 public sealed class LineValidator : ILineValidator
 {
@@ -11,11 +12,11 @@ public sealed class LineValidator : ILineValidator
 
     public IReadOnlyList<ValidationErrorType> Validate(string line)
     {
-        OrderRecordDto? order;
+        OrderLineDto? order;
 
         try
         {
-            order = JsonSerializer.Deserialize<OrderRecordDto>(line, JsonOptions);
+            order = JsonSerializer.Deserialize<OrderLineDto>(line, JsonOptions);
         }
         catch (JsonException)
         {

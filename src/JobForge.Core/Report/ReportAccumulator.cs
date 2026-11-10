@@ -1,6 +1,6 @@
-using JobForge.ConsoleValidator.Output;
+using JobForge.Core.Models;
 
-namespace JobForge.ConsoleValidator.Validation;
+namespace JobForge.Core.Report;
 
 public sealed class ReportAccumulator
 {
@@ -9,7 +9,7 @@ public sealed class ReportAccumulator
     private readonly Dictionary<ValidationErrorType, int> _errorCounts =
         Enum.GetValues<ValidationErrorType>().ToDictionary(type => type, _ => 0);
 
-    private readonly PriorityQueue<InvalidLineSampleDto, int> _samples = new();
+    private readonly PriorityQueue<InvalidLineDto, int> _samples = new();
 
     public int Total { get; private set; }
     public int Valid { get; private set; }
@@ -32,7 +32,7 @@ public sealed class ReportAccumulator
             _errorCounts[errorType]++;
         }
 
-        OfferSample(new InvalidLineSampleDto(lineNumber, errors));
+        OfferSample(new InvalidLineDto(lineNumber, errors));
     }
 
     public void Merge(ReportAccumulator other)
@@ -62,7 +62,7 @@ public sealed class ReportAccumulator
         return new ValidationReportDto(Total, Valid, Invalid, new Dictionary<ValidationErrorType, int>(_errorCounts), samples);
     }
 
-    private void OfferSample(InvalidLineSampleDto sample)
+    private void OfferSample(InvalidLineDto sample)
     {
         if (_samples.Count < MaxSamples)
         {

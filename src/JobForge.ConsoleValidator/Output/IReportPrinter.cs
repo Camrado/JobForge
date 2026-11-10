@@ -1,3 +1,5 @@
+using JobForge.Core.Models;
+
 namespace JobForge.ConsoleValidator.Output;
 
 public interface IReportPrinter

@@ -1,4 +1,10 @@
 <Solution>
-  <Project Path="src/JobForge.ConsoleValidator/JobForge.ConsoleValidator.csproj" />
-  <Project Path="tests/JobForge.ConsoleValidator.Tests/JobForge.ConsoleValidator.Tests.csproj" />
+  <Folder Name="/src/">
+    <Project Path="src/JobForge.Api/JobForge.Api.csproj" />
+    <Project Path="src/JobForge.ConsoleValidator/JobForge.ConsoleValidator.csproj" />
+    <Project Path="src/JobForge.Core/JobForge.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/JobForge.ConsoleValidator.Tests/JobForge.ConsoleValidator.Tests.csproj" />
+  </Folder>
 </Solution>

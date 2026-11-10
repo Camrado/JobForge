@@ -15,6 +15,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\src\JobForge.ConsoleValidator\JobForge.ConsoleValidator.csproj" />
+        <ProjectReference Include="..\..\src\JobForge.Core\JobForge.Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>

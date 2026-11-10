@@ -1,7 +1,9 @@
 using System.Threading.Channels;
-using JobForge.ConsoleValidator.Output;
+using JobForge.Core.Models;
+using JobForge.Core.Report;
+using JobForge.Core.Validation.LineValidator;
 
-namespace JobForge.ConsoleValidator.Validation;
+namespace JobForge.Core.Validation.FileValidator;
 
 public sealed class ConcurrentFileValidator(
     ILineValidator lineValidator,
