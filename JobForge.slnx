@@ -5,6 +5,7 @@
     <Project Path="src/JobForge.Core/JobForge.Core.csproj" />
   </Folder>
   <Folder Name="/tests/">
+    <Project Path="tests/JobForge.Api.Tests/JobForge.Api.Tests.csproj" />
     <Project Path="tests/JobForge.ConsoleValidator.Tests/JobForge.ConsoleValidator.Tests.csproj" />
   </Folder>
 </Solution>
