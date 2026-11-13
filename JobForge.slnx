@@ -8,4 +8,10 @@
     <Project Path="tests/JobForge.Api.Tests/JobForge.Api.Tests.csproj" />
     <Project Path="tests/JobForge.ConsoleValidator.Tests/JobForge.ConsoleValidator.Tests.csproj" />
   </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.yml" />
+    <File Path=".env.example" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
 </Solution>

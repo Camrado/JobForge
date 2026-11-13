@@ -3,6 +3,14 @@ using JobForge.Api;
 using JobForge.Api.Endpoints;
 using JobForge.Api.Jobs;
 
+try
+{
+    DotNetEnv.Env.TraversePath().NoClobber().Load();
+}
+catch (FileNotFoundException)
+{
+}
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
